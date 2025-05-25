@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import MapArea from "./components/MapArea";
 import { FormContext } from "./utils/FormContext";
-import { use } from "react";
 
 function App() {
   const [userGenIP, setUserGenIP] = useState("");

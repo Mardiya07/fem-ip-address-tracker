@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.header {
+  background-image: url("./assets/images/pattern-bg-mobile.png");
+  background-size: cover;
+  padding: 2rem 0 10rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.header h1 {
+  color: var(--White);
+  font-size: 1.5rem;
+  font-weight: var(--F-Secondary-Weight);
+  margin-bottom: 2rem;
+}
+.searchArea {
+  font-weight: var(--F-Primary-Weight);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+::placeholder {
+  color: var(--Very-Dark-Grey);
+  /* font-size: 0.7rem; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchInput {
+  padding: 0.9rem;
+  border-radius: 12px 0 0 12px;
+}
+.submitBtn {
+  background-color: #000;
+  border-radius: 0 12px 12px 0;
+  padding: 1rem;
+}
+.leaflet-container {
+  width: 100%;
+  height: 400px;
+  /* flex-grow: 9; */
 }
